@@ -6,6 +6,8 @@ declare module "styled-components" {
       offWhite: string;
       cream: string;
       darkBrown: string;
+      purple: string;
+      lightpurple: string;
       red: string;
       garnet: string;
       orange: string;
@@ -14,7 +16,7 @@ declare module "styled-components" {
       turquoise: string;
     };
 
-    tpography: {
+    typography: {
       mainFamily: string;
       regularFamily: string;
       placeholderFamily: string;

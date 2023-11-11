@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components/dist/base";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -15,6 +15,8 @@ html {
 body {
   margin: 0;
   color: ${({ theme }) => theme.colours.darkBrown};
+  background-color: ${({ theme }) => theme.colours.lightpurple};
+  
 }
 
 h1,
