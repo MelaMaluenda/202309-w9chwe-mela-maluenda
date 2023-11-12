@@ -19,14 +19,14 @@ const AvatarCard = ({ avatar }: AvatarCardProps): React.ReactElement => {
       <div className="card__choice">
         <img
           className="card__choice--totem"
-          src={`/images/${avatar.element}.webp`}
+          src={`images/${avatar.element}.webp`}
           alt={`Icon element: ${avatar.element}`}
           width="60"
           height="60"
         />
         <img
           className="card__choice--totem"
-          src={`/images/${avatar.characterTotem}.webp`}
+          src={`images/${avatar.characterTotem}.webp`}
           alt={`Icon character totem: ${avatar.element}`}
           width="40"
           height="60"
@@ -34,7 +34,7 @@ const AvatarCard = ({ avatar }: AvatarCardProps): React.ReactElement => {
       </div>
       <div className="card__fiction">
         <h3 className="card__fiction--fantasy"> 📖 {avatar.book}</h3>
-        <h3 className="fcard__fiction--fantasy"> 🎥 {avatar.audiovisual}</h3>
+        <h3 className="card__fiction--fantasy"> 🎥 {avatar.audiovisual}</h3>
         <h3 className="card__fiction--fantasy"> 🎮 {avatar.videoGame}</h3>
       </div>
     </AvatarCardStyled>

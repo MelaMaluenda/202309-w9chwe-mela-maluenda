@@ -7,9 +7,11 @@ const AvatarCardStyled = styled.article`
   justify-content: center;
   align-items: center;
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 15px;
   color: ${({ theme }) => theme.colours.darkBrown};
+  flex-wrap: wrap;
+  box-shadow: 10px 5px 5px ${({ theme }) => theme.colours.darkBrown};
 
   .card {
     &__name {
@@ -23,11 +25,12 @@ const AvatarCardStyled = styled.article`
       width: 200px;
       height: 150px;
       object-fit: cover;
-      border-radius: 150px;
+      border-radius: 90px 0px 90px 0;
     }
 
     &__choice {
       margin: 10px;
+      margin-top: 20px;
       display: flex;
       justify-content: row;
       gap: 20px;
@@ -53,16 +56,16 @@ const AvatarCardStyled = styled.article`
     }
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 620px) {
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 
     .card {
       &__name {
         padding: 10px;
         margin: 10px;
         font-family: ${({ theme }) => theme.typography.mainFamily};
-        font-size: ${({ theme }) => theme.typography.titleSize};
+        font-size: ${({ theme }) => theme.typography.mainSize};
       }
 
       &__image {
@@ -75,13 +78,35 @@ const AvatarCardStyled = styled.article`
         gap: 60px;
 
         &--totem {
-          width: 100%;
+          width: 80px;
+          height: 100px;
+        }
+      }
+
+      &__fiction {
+        flex-direction: row;
+        font-size: ${({ theme }) => theme.typography.secondaryTitleSize};
+        &--fantsy {
         }
       }
     }
   }
 
-  @media (min-width: 767px) {
+  @media (min-width: 985px) {
+    .card {
+      &__image {
+        width: 400px;
+        height: 250px;
+        border-radius: 160px 0 160px 0;
+      }
+
+      &__fiction {
+        flex-direction: column;
+        &--fantasy {
+          font-size: ${({ theme }) => theme.typography.secondaryTitleSize};
+        }
+      }
+    }
   }
 `;
 
