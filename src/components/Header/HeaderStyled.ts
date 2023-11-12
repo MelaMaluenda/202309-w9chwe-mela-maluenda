@@ -13,9 +13,9 @@ const HeaderStyled = styled.header`
   .head {
     &__image {
       object-fit: fill;
-      width: 100px;
-      height: 100px;
-      padding: 15px;
+      width: 90px;
+      height: 90px;
+      padding: 15px 15px 0px 15px;
     }
 
     &__title {
@@ -33,8 +33,9 @@ const HeaderStyled = styled.header`
 
     .head {
       &__image {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
       }
 
       &__title {
@@ -46,8 +47,8 @@ const HeaderStyled = styled.header`
   @media (min-width: 985px) {
     .head {
       &__image {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
       }
 
       &__title {
