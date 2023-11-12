@@ -23,8 +23,8 @@ describe("Given the HomePage", () => {
       expect(titleText).toBeInTheDocument();
     });
 
-    test("Then it should show the title 〰️ Ficción fantástica 〰️", () => {
-      const expectedTitle = "〰️ Ficción fantástica 〰️";
+    test("Then it should show the title  Ficción fantástica ", () => {
+      const expectedTitle = "Ficción fantástica";
 
       const titleText = screen.getByRole("heading", { name: expectedTitle });
 
