@@ -16,6 +16,7 @@ const AvatarListStyled = styled.ul`
       grid-template-columns: repeat(1, 1fr);
       justify-items: normal;
       margin: 15px;
+      gap: 30px;
     }
   }
 
