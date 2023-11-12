@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   color: ${({ theme }) => theme.colours.darkBrown};
-  background-image: url("./images/fons.webp");
+  background-image: url("/images/fons.webp");
   background-repeat: no-repeat;
   background-size: cover;
   

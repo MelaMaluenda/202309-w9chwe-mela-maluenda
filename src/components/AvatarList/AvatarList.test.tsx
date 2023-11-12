@@ -9,7 +9,7 @@ describe("Given the AvatarList component", () => {
   });
 
   describe("When it received an AvatarCard", () => {
-    test("Then it should show a card with an image and it's alternative text `Icon element: Tierra`", () => {
+    test("Then it should show a card with an image and it's alternative text `Icon element: tierra`", () => {
       const expextedAltElementText = avatarMock;
 
       const avatarElement = screen.getAllByAltText(

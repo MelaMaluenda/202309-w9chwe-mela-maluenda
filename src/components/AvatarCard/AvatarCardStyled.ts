@@ -7,11 +7,11 @@ const AvatarCardStyled = styled.article`
   justify-content: center;
   align-items: center;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
   color: ${({ theme }) => theme.colours.darkBrown};
   flex-wrap: wrap;
-  box-shadow: 10px 5px 5px ${({ theme }) => theme.colours.darkBrown};
+  border: solid 10px ${({ theme }) => theme.colours.lime};
 
   .card {
     &__name {

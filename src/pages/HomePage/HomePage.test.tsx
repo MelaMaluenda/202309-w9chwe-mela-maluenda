@@ -23,10 +23,10 @@ describe("Given the HomePage", () => {
       expect(titleText).toBeInTheDocument();
     });
 
-    test("Then it should show the title  Ficción fantástica ", () => {
-      const expectedTitle = "Ficción fantástica";
+    test("Then it should show navigation button `Iniciar`", () => {
+      const expectedTitle = "Iniciar";
 
-      const titleText = screen.getByRole("heading", { name: expectedTitle });
+      const titleText = screen.getByRole("link", { name: expectedTitle });
 
       expect(titleText).toBeInTheDocument();
     });
