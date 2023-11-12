@@ -22,8 +22,8 @@ const AvatarCardStyled = styled.article`
     }
 
     &__image {
-      width: 200px;
-      height: 150px;
+      width: 400px;
+      height: 350px;
       object-fit: cover;
       border-radius: 90px 0px 90px 0;
     }
