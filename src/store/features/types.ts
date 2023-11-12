@@ -1,7 +1,7 @@
 import AvatarStructure from "../types";
 
-interface AvatarStateStructure {
-  avatar: AvatarStructure[];
+interface AquelarreStateStructure {
+  avatars: AvatarStructure[];
 }
 
-export default AvatarStateStructure;
+export default AquelarreStateStructure;
