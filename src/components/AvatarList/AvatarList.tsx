@@ -1,16 +1,16 @@
-import avatarsData from "../../data/avatarData/avatarsData";
+import { useAppSelector } from "../../store/features/hooks";
 import AvatarCard from "../AvatarCard/AvatarCard";
 import AvatarListStyled from "./AvatarListStyled";
 
-const avatars = avatarsData;
-
 const AvatarList = () => {
+  const aquelarre = useAppSelector((state) => state.avatarState.avatars);
+
   return (
     <AvatarListStyled>
       <div className="avatar-list">
-        {avatars.map((avatar) => (
-          <li className="avatar-list__item" key={avatar.id}>
-            <AvatarCard avatar={avatar} />
+        {aquelarre.map((avatars) => (
+          <li className="avatar-list__item" key={avatars.id}>
+            <AvatarCard avatar={avatars} />
           </li>
         ))}
       </div>
