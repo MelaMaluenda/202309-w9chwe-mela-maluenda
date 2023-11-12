@@ -9,19 +9,24 @@ const GlobalStyle = createGlobalStyle`
 
 html {
   font-family: ${({ theme }) => theme.typography.regularFamily};
-  font-family: ${({ theme }) => theme.typography.regularSize};
+  font-size: ${({ theme }) => theme.typography.regularSize};
 }
 
 body {
   margin: 0;
   color: ${({ theme }) => theme.colours.darkBrown};
-  background-color: ${({ theme }) => theme.colours.lightpurple};
+  background-image: url("./images/fons.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   margin: 0;
+  font: inherit;
 }
 
 ul {
@@ -30,13 +35,20 @@ ul {
   padding-left: 0;
 }
 
-input {
-  font: inhert;
+input,
+button,
+textarea,
+select {
+	font: inherit;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+	max-width: 100%;
 }
 
 button {

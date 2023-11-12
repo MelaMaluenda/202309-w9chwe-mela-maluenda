@@ -20,9 +20,10 @@ const mainTheme: DefaultTheme = {
     regularFamily: "'Nunito Sans', sans-serif",
     placeholderFamily: "'Raleway Dots', sans-serif",
     mainSize: "3rem",
-    titleSize: "4rem",
-    regularSize: "2rem",
-    formSize: "1rem",
+    titleSize: "2.2rem",
+    secondaryTitleSize: "1.5rem",
+    regularSize: "1.125rem",
+    formSize: "0.8rem",
     smallSize: "0.6rem",
   },
 };

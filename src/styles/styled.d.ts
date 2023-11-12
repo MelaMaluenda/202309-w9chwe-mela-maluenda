@@ -22,6 +22,7 @@ declare module "styled-components" {
       placeholderFamily: string;
       mainSize: string;
       titleSize: string;
+      secondaryTitleSize: string;
       regularSize: string;
       formSize: string;
       smallSize: string;
