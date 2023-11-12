@@ -4,18 +4,20 @@ const PageStyled = styled.main`
   text-align: center;
 
   .frame {
-    padding: 200px 15px 0px 15px;
+    padding: 180px 15px 0px 15px;
     font-family: ${({ theme }) => theme.typography.regularFamily};
     font-size: ${({ theme }) => theme.typography.secondaryTitleSize};
-    color: ${({ theme }) => theme.colours.garnet};
-    text-shadow: 1px 1px 2px ${({ theme }) => theme.colours.cream};
+    color: ${({ theme }) => theme.colours.offWhite};
     font-weight: bolder;
+    background-image: url("/images/fondo-negro-acuarela.webp");
+    background-size: cover;
   }
 
   @media (min-width: 620px) {
     .frame {
-      padding: 250px 15px 0px 15px;
+      padding: 130px 15px 10px 15px;
       text-transform: uppercase;
+      font-size: ${({ theme }) => theme.typography.titleSize};
     }
   }
 `;
