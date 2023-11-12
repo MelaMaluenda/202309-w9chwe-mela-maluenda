@@ -1,25 +1,21 @@
 import styled from "styled-components";
 
 const PageStyled = styled.main`
-  margin-top: 10px;
-  padding: 15px;
   text-align: center;
 
-  .head {
-    &__image {
-      object-fit: fill;
-    }
+  .frame {
+    padding: 200px 15px 0px 15px;
+    font-family: ${({ theme }) => theme.typography.regularFamily};
+    font-size: ${({ theme }) => theme.typography.secondaryTitleSize};
+    color: ${({ theme }) => theme.colours.garnet};
+    text-shadow: 1px 1px 2px ${({ theme }) => theme.colours.cream};
+    font-weight: bolder;
+  }
 
-    &__title {
-      align-items: center;
-      font-family: ${({ theme }) => theme.typography.mainFamily};
-      font-size: ${({ theme }) => theme.typography.mainSize};
+  @media (min-width: 620px) {
+    .frame {
+      padding: 250px 15px 0px 15px;
       text-transform: uppercase;
-    }
-
-    &__secondary-title {
-      padding: 20px;
-      color: ${({ theme }) => theme.colours.purple};
     }
   }
 `;
