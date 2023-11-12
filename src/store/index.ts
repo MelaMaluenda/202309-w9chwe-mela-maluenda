@@ -1,7 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { aquelarreReducer as avatarReducer } from "./features/avatarsSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { avatarState: avatarReducer },
 });
 
 export type AppDispatch = typeof store.dispatch;
