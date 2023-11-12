@@ -3,8 +3,8 @@ import avatarStructure from "../../store/types";
 const avatarMock: avatarStructure = {
   id: 1,
   name: "Hermione Granger",
-  element: "Tierra",
-  characterTotem: "Bruja",
+  element: "tierra",
+  characterTotem: "bruja",
   book: "Los Cuentos de Beedle el Bardo",
   audiovisual: "El Castillo Ambulante",
   videoGame: "The Elder Scrolls V: Skyrim",
